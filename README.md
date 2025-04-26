@@ -57,3 +57,24 @@ Install required tools (if not already):
 sudo apt update
 sudo apt install aircrack-ng xterm
 
+
+# Step 1: Clone the GitHub repository
+git clone # Step 1: Clone the GitHub repository
+git clone https://github.com/abdullah-jakhar/ad_wifi_hack.git
+
+# Step 2: Navigate to the tool's directory
+cd ad_wifi_hack
+
+# Step 3: Make the script executable
+chmod +x wifi_hack3.sh
+
+# Step 4: Run the Tool
+./wifi_hack3.sh
+
+
+
+# Step 2: Navigate to the tool's directory
+cd a-d-wifi-hack
+
+# Step 3: Make the script executable
+chmod +x wifi-hack.sh
