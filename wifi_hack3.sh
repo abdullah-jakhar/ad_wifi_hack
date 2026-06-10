@@ -35,8 +35,9 @@ done
 
 # Enable Monitor Mode
 echo -e "${cyan}[*] Enabling Monitor Mode...${reset}"
+sudo airmon-ng check kill
 sudo airmon-ng start $interface
-mon_iface="${interface}mon"
+mon_iface=$(iw dev | awk '$1=="Interface"{print $2}' | tail -n1)
 sleep 2
 
 if ! iwconfig $mon_iface &>/dev/null; then
